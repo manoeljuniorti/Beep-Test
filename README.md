@@ -1,6 +1,6 @@
 # Beep Saúde Test
 
-Este é um projeto , desenvolvido usando Vue.js no frontend e Ruby on Rails no backend.
+Este é um projeto desenvolvido usando Vue.js para frontend e Ruby on Rails no backend.
 
 ## Funcionalidades
 
@@ -10,10 +10,10 @@ Este é um projeto , desenvolvido usando Vue.js no frontend e Ruby on Rails no b
 
 ## Ferramentas usadas
 
-- Node.js (versão 14 ou superior)
-- Ruby (versão 3.2.2 ou superior)
-- Rails (versão 7.x ou superior)
-- MySQL (para o banco de dados)
+- Node.js (versão 14 ou superior);
+- Ruby (versão 3.2.2 ou superior);
+- Rails (versão 7.x ou superior);
+- MySQL (para o banco de dados).
 
 ## Instalação
 
@@ -74,11 +74,11 @@ npm run serve
 
 ## Uso
 
-- A homepage é uma requisição para a rota index do controller onde busca as 15 principais histórias e seus comentários considerados relevantes.
+- A homepage é uma requisição para a rota index do controller onde busca as 15 principais histórias e seus comentários considerados relevantes;
 - A busca é realizada por um termo onde o mesmo poderá ser encontrado tanto em uma história quanto em um comentário.
 
 ## Observações
 
-- Durante o desenvolvimento foi observado uma demora para receber resposta da API Hacker News. Como exemplo, a index leva em torno de 1 até 2 minutos para conseguir receber a resposta.
-- Como a rota de busca exigiria muitos resultados, optei por configurar um cronjob usando Sidekiq para que execute a cada 6 horas uma busca geral na API externa, com objetivo de enriquecer uma base de dados local. Essa base é usada para ser consultada na rota de busca, ganhando performance e celeridade.
+- Durante o desenvolvimento foi observado uma demora para receber resposta da API Hacker News. Como exemplo, a index leva em torno de 1 até 2 minutos para conseguir receber a resposta;
+- Como a rota de busca exigiria muitos resultados, optei por configurar um cronjob usando Sidekiq para que execute a cada 6 horas uma busca geral na API externa, com objetivo de enriquecer uma base de dados local. Essa base é usada para ser consultada na rota de busca, ganhando performance e celeridade;
 - Já na rota index, aproveitei a funcionalidade de Cache que é oferecida pelo Ruby on Rails e optei por armazenar por 1h a primeira resposta recebida na requisição.
